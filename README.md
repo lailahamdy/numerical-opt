@@ -20,7 +20,3 @@ The `BFGS` function implements the Broyden-Fletcher-Goldfarb-Shanno (BFGS) optim
 - `y`: The target values.
 - `num_iter`: The maximum number of iterations (default is 100).
 - `epsilon`: The convergence threshold (default is 0.001).
-
-The function first reshapes the target values array to ensure consistency in dimensions. It initializes the inverse Hessian matrix (B_inv) to the identity matrix and calculates the gradient of the objective function at the initial parameter guess. Then, it iteratively updates the model parameters using the BFGS update formula until convergence or the maximum number of iterations is reached.
-
-Upon convergence, the function returns the optimal model parameters (`theta_curr`), the final gradient (`gradient_curr`), and the number of iterations performed.
